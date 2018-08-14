@@ -1,0 +1,38 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+.noText{color: #ffffff !important;}
+.noMargin{margin-bottom: 0 !important; Margin-bottom: 0 !important;}
+
+/*spaces*/
+.box-5px{padding-top: 5px;}
+.box-8px{padding-top: 8px;}
+.box-16px{padding-top: 16px;}
+.box-24px{padding-top: 24px;}
+.box-32px{padding-top: 32px;}
+.box-48px{padding-top: 48px;}
+.box-56px{padding-top: 56px;}
+.box-64px{padding-top: 64px;}
+
+.line-botton{border-bottom: 1px solid #dedede;}
+.line-top{border-top: 1px solid #dedede;}
+
+
+.logo-image{width: 150px !important;}
+.image-dis{width: 40px !important;}
+.image-logo-footer{width: 266px !important;}
+.img-nps{width: 62% !important;}
+
+.header-image, .restaurant-image{
+  border-radius: 8px;
+}
+
+.text-small{font-size: 13px !important;}
+.text-gray{color: #919191;}
+.text-green{color: #5CB85C !important; font-weight: bold;}
+.text-rating{color: #FFBB00; font-weight: bold; font-size: 25px;}
+
+.discont{
+  padding: 10px;
+  background-color: red;
+}
