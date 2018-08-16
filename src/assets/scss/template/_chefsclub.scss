@@ -1,6 +1,16 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
+td {
+  word-wrap: break-word !important;
+  -webkit-hyphens: none !important;
+  -moz-hyphens: none !important;
+  hyphens: none !important;
+  border-collapse: collapse !important;
+}
+
+h1{line-height: 1.1 !important;}
+
 .noText{color: #ffffff !important;}
 .noMargin{margin-bottom: 0 !important; Margin-bottom: 0 !important;}
 
