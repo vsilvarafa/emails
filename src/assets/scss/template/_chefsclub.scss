@@ -1,18 +1,33 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
+
+//variaveis
+$chefsclub-red: #f8485e;
+$chefsclub-blue: #00c1d5;
+$chefsclub-grey: #53565a;
+$chefsclub-green: #5CB85C;
+$chefsclub-rating: #FFBB00;
+
+//--------------------------------------
+
+//reset
 td {
-  word-wrap: break-word !important;
-  -webkit-hyphens: none !important;
-  -moz-hyphens: none !important;
-  hyphens: none !important;
-  border-collapse: collapse !important;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+  border-collapse: collapse;
 }
 
-h1{line-height: 1.1 !important;}
+.noText{color: #ffffff;}
+.noMargin{margin-bottom: 0; Margin-bottom: 0;}
+.noPadding{
 
-.noText{color: #ffffff !important;}
-.noMargin{margin-bottom: 0 !important; Margin-bottom: 0 !important;}
+	@media only screen and (max-width: 596px) {
+		padding-bottom: 0 !important;
+	}
+}
 
 /*spaces*/
 .box-5px{padding-top: 5px;}
@@ -27,22 +42,58 @@ h1{line-height: 1.1 !important;}
 .line-botton{border-bottom: 1px solid #dedede;}
 .line-top{border-top: 1px solid #dedede;}
 
-
+//images
 .logo-image{width: 150px !important;}
 .image-dis{width: 40px !important;}
 .image-logo-footer{width: 266px !important;}
 .img-nps{width: 62% !important;}
+.img-social{width: 25px;}
 
 .header-image, .restaurant-image{
   border-radius: 8px;
 }
 
-.text-small{font-size: 13px !important;}
+//typografy
+h1, h2, h3, h4, h5 {line-height: 1.1; font-weight: bold;}
+.text-small{font-size: 13px;}
 .text-gray{color: #919191;}
-.text-green{color: #5CB85C !important; font-weight: bold;}
-.text-rating{color: #FFBB00; font-weight: bold; font-size: 25px;}
+.text-green{color:$chefsclub-green; font-weight: bold;}
+.text-rating{color: $chefsclub-rating; font-weight: bold; font-size: 25px;}
 
-.discont{
-  padding: 10px;
-  background-color: red;
+
+
+//RESET------------------------------------------------------------------------
+
+
+//backgrounds
+table {
+  &.body {
+    background: #ffffff;
+  }
+
+  &.container {
+    background: transparent;
+  }
+}
+
+//button
+table.button {
+
+  table {
+
+    td {
+      background: $chefsclub-red;
+      border: $chefsclub-red;
+    }
+  }
+}
+
+table.button:hover,
+table.button:visited,
+table.button:active {
+  table {
+    td {
+      background: darken($chefsclub-red, 10%);
+    }
+  }
 }
