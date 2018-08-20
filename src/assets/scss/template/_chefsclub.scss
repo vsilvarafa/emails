@@ -22,6 +22,7 @@ td {
 
 .noText{color: #ffffff;}
 .noMargin{margin-bottom: 0; Margin-bottom: 0;}
+.noImage-padding{padding-right: 0 !important; padding-left: 0 !important; padding-bottom: 0 !important;}
 .noPadding{
 
 	@media only screen and (max-width: 596px) {
@@ -56,6 +57,7 @@ td {
 //typografy
 h1, h2, h3, h4, h5 {line-height: 1.1; font-weight: bold;}
 .text-small{font-size: 13px;}
+.text-white{color: #ffffff;}
 .text-gray{color: #919191;}
 .text-green{color:$chefsclub-green; font-weight: bold;}
 .text-rating{color: $chefsclub-rating; font-weight: bold; font-size: 25px;}
