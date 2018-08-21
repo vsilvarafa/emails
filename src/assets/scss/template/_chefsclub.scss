@@ -33,6 +33,7 @@ td {
 /*spaces*/
 .box-5px{padding-top: 5px;}
 .box-8px{padding-top: 8px;}
+.box-10px{padding-top: 10px;}
 .box-16px{padding-top: 16px;}
 .box-24px{padding-top: 24px;}
 .box-32px{padding-top: 32px;}
@@ -56,11 +57,21 @@ td {
 
 //typografy
 h1, h2, h3, h4, h5 {line-height: 1.1; font-weight: bold;}
+
+h1{
+  @media only screen and (max-width: 596px) {
+    font-size: 40px;
+  }
+}
+
+.red{color: $chefsclub-red !important;}
+.blue{color: $chefsclub-blue !important;}
 .text-small{font-size: 13px;}
 .text-white{color: #ffffff;}
 .text-gray{color: #919191;}
 .text-green{color:$chefsclub-green; font-weight: bold;}
 .text-rating{color: $chefsclub-rating; font-weight: bold; font-size: 25px;}
+.uppercase{text-transform: uppercase; font-weight: bold;}
 
 
 
