@@ -1,36 +1,4 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
-
-
-//variaveis
-$chefsclub-red: #f8485e;
-$chefsclub-blue: #00c1d5;
-$chefsclub-grey: #53565a;
-$chefsclub-green: #5CB85C;
-$chefsclub-rating: #FFBB00;
-
-//--------------------------------------
-
-//reset
-td {
-  word-wrap: break-word;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  hyphens: none;
-  border-collapse: collapse;
-}
-
-.noText{color: #ffffff;}
-.noMargin{margin-bottom: 0; Margin-bottom: 0;}
-.noImage-padding{padding-right: 0 !important; padding-left: 0 !important; padding-bottom: 0 !important;}
-.noPadding{
-
-	@media only screen and (max-width: 596px) {
-		padding-bottom: 0 !important;
-	}
-}
-
-/*spaces*/
+//spaces ----------------------------
 .box-5px{padding-top: 5px;}
 .box-8px{padding-top: 8px;}
 .box-10px{padding-top: 10px;}
@@ -40,23 +8,44 @@ td {
 .box-48px{padding-top: 48px;}
 .box-56px{padding-top: 56px;}
 .box-64px{padding-top: 64px;}
+.pl-image{padding-left: 12px;}
 
-.line-botton{border-bottom: 1px solid #dedede;}
-.line-top{border-top: 1px solid #dedede;}
+.line-botton{
+  border-bottom: 1px solid #dedede;
+}
 
-//images
-.logo-image{width: 150px !important;}
-.image-dis{width: 40px !important;}
-.image-logo-footer{width: 266px !important;}
-.img-nps{width: 62% !important;}
-.img-social{width: 25px;}
+.line-top{
+  border-top: 1px solid #dedede;
+}
+
+
+//images -----------------------------
+.noMargin{margin-bottom: 0; Margin-bottom: 0;}
+.noImage-padding{padding-right: 0 !important; padding-left: 0 !important; padding-bottom: 0 !important;}
+.logo-image{@include size(150px);}
+.image-dis{@include size(40px);}
+.image-logo-footer{@include size(266px);}
+.img-nps{@include size(62%);}
+.img-social{@include size(25px);}
+.img-trans{@include size(50px);}
+.noText{color: transparent;}
+
+.noPadding{
+
+  @media only screen and (max-width: 596px) {
+		padding-bottom: 0 !important;
+	}
+}
 
 .header-image, .restaurant-image{
   border-radius: 8px;
 }
 
-//typografy
-h1, h2, h3, h4, h5 {line-height: 1.1; font-weight: bold;}
+
+//typografy -----------------------------------------
+h1, h2, h3, h4, h5 {
+  @extend %title-config;
+}
 
 h1{
   @media only screen and (max-width: 596px) {
@@ -74,9 +63,14 @@ h1{
 .uppercase{text-transform: uppercase; font-weight: bold;}
 
 
-
 //RESET------------------------------------------------------------------------
-
+td {
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+  border-collapse: collapse;
+}
 
 //backgrounds
 table {
